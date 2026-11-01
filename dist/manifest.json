@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "拼音弹窗",
+  "version": "0.1.0",
+  "description": "选中中文，弹出拼音注音。",
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "assets/content.js-loader-9eQo4iLK.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": [
+        "assets/src-content.js-BEqaPp4C.js"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
+}
